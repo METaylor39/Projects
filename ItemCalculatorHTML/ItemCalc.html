@@ -1,0 +1,26 @@
+<html>
+<script type= "text/javascript">
+
+var price = 0;
+var quantity = 0;
+var discount = 0;
+var total = 0;
+
+
+price = prompt("What is the price of the item?", 0);
+quantity = prompt("How many did you buy", 0);
+
+total = price * quantity;
+
+if(total => 1000 && total < 4999){
+discount = parseFloat(total)* 0.05;
+} else if(total => 5000){
+discount = parseFloat(total)* 0.1;
+}else{
+document.write("Sorry, no discount, ");
+}
+total = parseFloat(total) + parseFloat(discount);
+document.write(total);
+
+</script>
+</html>

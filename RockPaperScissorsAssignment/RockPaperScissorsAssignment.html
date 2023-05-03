@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="game">
+
+    <script>
+
+var game = "Y";
+
+do{
+
+        var playerC = prompt('"Rock, Paper, Scissors, Shoot!" Do you choose rock, paper or scissors?');
+
+        if (! playerC) {
+            document.write("<p>Not Acceptable</p>");
+        } else {
+            document.write("<p>Player 1:" + " " + playerC + "</p>");
+        }
+
+        var computerC = Math.random();
+        if (computerC < 0.34) {
+            computerC = "rock";
+        } else if(computerC <= 0.67) {
+            computerC = "paper";
+        } else {
+            computerC = "scissors";
+        }
+
+        document.write("<p>Computer:" + " " + computerC + "</p>");
+
+        var compare = function(choice1,choice2) {
+            if (choice1 === choice2) {
+                return "It's a tie!";
+            }
+            if (choice1 === "rock") {
+                if (choice2 === "scissors") {
+                    return "You win!";
+                } else {
+                    return "You lose! Try again.";
+                }
+            }
+            if (choice1 === "paper") {
+                if (choice2 === "rock") {
+                    return "You win!";
+                } else {
+                    return "You lose! Try again.";
+                }
+            }
+            if (choice1 === "scissors") {
+                if (choice2 === "rock") {
+                    return "You lose! Try again.";
+                } else {
+                    return "You win!";
+                }
+            }
+        };
+
+        var results = compare(playerC,computerC);
+
+        document.write( results);
+
+	game = prompt("wanna play again?");
+
+}while (game === "Y");
+    </script>
+
+</div>
+
+</body>
+</html>
