@@ -1,0 +1,3 @@
+The Long Road is a C# text based adventure game.
+The goal is the game is to reach the end of a strange forest while keeping yourself alive and sane.
+The main way the game interacts with the user through provided commands.
