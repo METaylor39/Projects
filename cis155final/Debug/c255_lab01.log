@@ -1,0 +1,2 @@
+﻿fltkd.lib(fl_call_main.obj) : error LNK2019: unresolved external symbol _main referenced in function _WinMain@16
+S:\schoolWork\c155gui\labs\cis155final\\..\..\bin\Debug\cis155FinalProject.exe : fatal error LNK1120: 1 unresolved externals
